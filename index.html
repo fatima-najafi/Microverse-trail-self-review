@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <h1 id="title">Servey-Form</h1>
+    <p id="description">Fill the servey form </p>
+    <div class="main-content">
+        <div class="form-content">
+            <form  id="survey-form"action="">
+                <label for="name" id="name-label">Name</label>
+               <input  id="name" type="text" required placeholder="Enter your name" /> <br>
+
+               <label for="email" id="email-label">Email</label>
+               <input id="email" type="email" required placeholder="Enter your email" /><br>
+
+               <label for="number" id="number-label">Enter your rate from 1 to 10</label>
+               <input id="number"type="number" min="1" max="10" required placeholder="Enter your rate" / required> <br>
+                <label for="dropdown"> Which option is best for your rate</label>
+                <select name="" id="dropdown">
+                    <option value="better knowledge">better knowledge</option>
+                    <option value=" full time job">full time job</option>
+                    <option value=" improvment ">improvment </option>
+                    <option value="other">other</option>
+
+                </select><br><br>
+
+
+              <label>Would like to make servey-form!</label><br>
+                    <input type="radio" name="recommand" value="yes" checked id="yes" />
+                  <label for="definitely">Yes  </label><br>
+
+                    <input type="radio" name="recommand"  value="maybe"id="maybe" value="maybe" />
+                  <label for="maybe">Maybe</label>  <br>
+
+                    <input type="radio" name="recommand" value="not-sure" id="not-sure" />
+                  <label for="not-sure">Not-Sure</label>  <br><br>
+
+
+              <label>Which field can help more us to make professional servey form</label><br>
+                   <input type="checkbox"id ="html"value="html" name="program1"/>
+                    <label for="html">HTML</label> <br>
+                   <input type="checkbox"id ="javascript"value="javascript" name="program2" />
+                   <label for="javascript">JAVASCRIPT</label><br>
+                   <input type="checkbox"id ="css"value="css" name="program3" />
+                   <label for="css">CSS</label><br>
+
+
+                   <label for="comment"> Any comments?</label>  <br>
+                   <textarea id="comment" cols="50" rows="4" placeholder="Enter your comments here..."></textarea>
+               <input type="submit" id="submit"  value="submit"/>
+            </form>
+
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

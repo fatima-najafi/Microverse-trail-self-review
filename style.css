@@ -1,0 +1,106 @@
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.main {
+  background-image: url(https://dl.airtable.com/.attachmentThumbnails/ad97dd00af8cdd4a666f5cf5a0d56bcc/451c6cae);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  font-size: 24px;
+  color: #fff;
+}
+
+.main::after {
+  content: "";
+  position: relative;
+  color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main > p,
+.main > h1 {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 2;
+}
+
+.main-content {
+  background-color: rgb(27, 27, 50, 9);
+  max-width: 650px;
+  display: flex;
+  flex-direction: colum;
+  padding: 40px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 -1px 10px 5px purple;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#comment {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+label[for=name],
+label[for=email],
+label[for=number],
+label[for=comment] {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#html,
+#javascript,
+#css,
+fieldset input {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+#comment {
+  min-height: 200px;
+}
+
+label[for=comment] {
+  margin-top: 50px;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: gray;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+#submit:hover {
+  background-color: burlywood;
+}
